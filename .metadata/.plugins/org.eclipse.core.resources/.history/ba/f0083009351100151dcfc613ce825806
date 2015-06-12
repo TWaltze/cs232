@@ -1,0 +1,49 @@
+package hw3;
+
+public class P467P5 {
+	public static Pet[] pets;
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void outputSmallest() {
+		Pet smallest = pets[0];
+		
+		for (Pet p : pets) {
+			if(p.getWeight() < smallest.getWeight()) {
+				smallest = p;
+			}
+		}
+	}
+	
+	public static void outputLargest() {
+		Pet largest = pets[0];
+		
+		for (Pet p : pets) {
+			if(p.getWeight() > largest.getWeight()) {
+				largest = p;
+			}
+		}
+	}
+	
+	public static void outputOldest() {
+		Pet oldest = pets[0];
+		
+		for (Pet p : pets) {
+			if(p.getAge() > oldest.getAge()) {
+				oldest = p;
+			}
+		}
+	}
+	
+	public static void outputYoungest() {
+		Pet youngest = pets[0];
+		
+		for (Pet p : pets) {
+			if(p.getAge() < youngest.getAge()) {
+				youngest = p;
+			}
+		}
+	}
+}
