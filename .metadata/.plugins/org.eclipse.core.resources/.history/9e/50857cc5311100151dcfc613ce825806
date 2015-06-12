@@ -39,6 +39,8 @@ public class P464E5 {
 			scanner.next();
 		}
 		
+		this.rating = scanner.nextInt();
+		
 		System.out.println(this.rating);
 	}
 	

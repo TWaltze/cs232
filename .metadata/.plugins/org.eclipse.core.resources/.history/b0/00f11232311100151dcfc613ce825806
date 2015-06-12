@@ -23,28 +23,11 @@ public class P464E5 {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("Please enter a rating: ");
-		
-		while(true) {
-			if (scanner.hasNextInt()) {
-				int input = scanner.nextInt();
-				
-				if(isValid(input)) {
-					this.rating = input;
-					
-					break;
-				}
-			}
-			
+		while(!scanner.hasNextInt()) {
 			System.out.print("Invalid integer. Please try again: ");
 			scanner.next();
 		}
 		
-		System.out.println(this.rating);
-	}
-	
-	public static void main(String[] args) {
-		P464E5 characteristic = new P464E5("test");
-		
-		characteristic.setRating();
+		this.rating = scanner.nextInt();
 	}
 }

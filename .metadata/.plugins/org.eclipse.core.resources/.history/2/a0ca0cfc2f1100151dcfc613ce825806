@@ -31,7 +31,7 @@ public class P463E2 {
 	}
 	
 	public void setTime(int hour, int minute, boolean isAM) {
-		if (isAM) {
+		if (!isAM) {
 			hour += 12;
 		}
 		

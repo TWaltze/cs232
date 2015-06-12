@@ -30,6 +30,7 @@ public class P464E5 {
 				
 				if(isValid(input)) {
 					this.rating = input;
+					fetch = false;
 					
 					break;
 				}
@@ -38,6 +39,8 @@ public class P464E5 {
 			System.out.print("Invalid integer. Please try again: ");
 			scanner.next();
 		}
+		
+		this.rating = scanner.nextInt();
 		
 		System.out.println(this.rating);
 	}

@@ -31,7 +31,7 @@ public class P463E2 {
 	}
 	
 	public void setTime(int hour, int minute, boolean isAM) {
-		if (isAM) {
+		if (!isAM) {
 			hour += 12;
 		}
 		
@@ -39,12 +39,5 @@ public class P463E2 {
 			this.hour = hour;
 			this.minute = minute;
 		}
-	}
-	
-	public static void main(String[] args) {
-		P463E2 clock = new P463E2();
-		
-		clock.setTime(14, 30, true);
-		System.out.println("Current time: " + clock.hour + ":" + clock.minute);
 	}
 }
