@@ -13,7 +13,7 @@ public class P463E2 {
 		this.minute = minute;
 	}
 	
-	private boolean isValid(int hour, int minute) {
+	private boolean isValid(hour, minute) {
 		if (hour < 0 || hour > 23) {
 			return false;
 		} else if (minute < 0 || minute > 59) {
