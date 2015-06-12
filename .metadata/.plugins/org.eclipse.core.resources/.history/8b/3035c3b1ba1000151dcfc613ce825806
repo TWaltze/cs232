@@ -1,0 +1,40 @@
+package hw3;
+
+import java.util.Scanner;
+
+public class P362P5 {
+	public static int a;
+	public static int b;
+	public static int c;
+	public static int d;
+	public static int f;
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Please enter the number of A grades: ");
+		a = scanner.nextInt();
+		
+		System.out.println("Please enter the number of B grades: ");
+		b = scanner.nextInt();
+		
+		System.out.println("Please enter the number of C grades: ");
+		c = scanner.nextInt();
+		
+		System.out.println("Please enter the number of D grades: ");
+		d = scanner.nextInt();
+		
+		System.out.println("Please enter the number of F grades: ");
+		f = scanner.nextInt();
+		
+		
+	}
+	
+	public static int totalGrades() {
+		return a + b + c + d + f;
+	}
+	
+	public static gradePercentage(int count) {
+		return count / totalGrades();
+	}
+}

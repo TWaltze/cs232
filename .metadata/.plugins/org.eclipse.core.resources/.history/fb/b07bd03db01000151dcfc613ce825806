@@ -1,0 +1,59 @@
+package hw3;
+
+import java.util.Scanner;
+
+public class P361P3 {
+	public double quizOne;
+	public double quizTwo;
+	public double midterm;
+	public double exam;
+	public double finalScore;
+	public char finalGrade;
+	
+	public static void main(String[] args) {
+		P361P3 student = new P361P3();
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Please enter the student's first quiz: ");
+		student.quizOne = scanner.nextDouble();
+		
+		System.out.println("Please enter the student's second quiz: ");
+		student.quizTwo = scanner.nextDouble();
+		
+		System.out.println("Please enter the student's midterm: ");
+		student.midterm = scanner.nextDouble();
+		
+		System.out.println("Please enter the student's final exam: ");
+		student.exam = scanner.nextDouble();
+		
+		student.finalScore();
+		student.finalGrade();
+		
+		System.out.println("The student's final grade is a " + student.finalGrade);
+	}
+	
+	public void finalScore() {
+		double quizScore = (quizOne * .125) + (quizTwo * .125);
+		double midtermScore = midterm * .25;
+		double finalScore = exam * .5;
+		
+		System.out.println(quizOne);
+		
+		finalScore = (quizScore + midtermScore + finalScore) * 100;
+	}
+	
+	public void finalGrade() {
+		System.out.println(finalScore);
+		if (finalScore >= 90) {
+			finalGrade = 'A';
+		} else if (finalScore >= 80) {
+			finalGrade = 'B';
+		} else if (finalScore >= 70) {
+			finalGrade = 'C';
+		} else if (finalScore >= 60) {
+			finalGrade = 'D';
+		} else {
+			finalGrade = 'F';
+		}
+	}
+}

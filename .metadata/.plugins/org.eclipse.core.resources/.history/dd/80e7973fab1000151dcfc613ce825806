@@ -1,0 +1,35 @@
+package hw3;
+
+import java.util.Scanner;
+
+public class P361P3 {
+	public static double quizOne;
+	public static double quizTwo;
+	public static double midterm;
+	public static double finalExam;
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Please enter the student's first quiz: ");
+		this.quizOne = scanner.nextDouble();
+		
+		System.out.println("Please enter the student's second quiz: ");
+		this.quizTwo = scanner.nextDouble();
+		
+		System.out.println("Please enter the student's midterm: ");
+		this.midterm = scanner.nextDouble();
+		
+		System.out.println("Please enter the student's final exam: ");
+		this.finalExam = scanner.nextDouble();
+		
+		System.out.println("The student's final grade is " + finalGrade());
+	}
+	
+	public static double finalGrade() {
+		double quizScore = (this.quizOne + this.quizTwo) * .25;
+		double midtermScore = this.midterm * .25;
+		double finalScore = this.finalExam * .5;
+		
+		return quizScore + midtermScore + finalScore;
+	}
+}
