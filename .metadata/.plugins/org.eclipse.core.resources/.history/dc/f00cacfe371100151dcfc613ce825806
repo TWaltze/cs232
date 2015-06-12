@@ -30,12 +30,6 @@ public class P359E7 {
 		this.distanceTraveled = distance;
 	}
 	
-	/**
-	 * 
-	 * @param n The speed to set the current speed to
-	 * 
-	 * @post The current speed is set to n
-	 */
 	public void setCurrentSpeed(double n) {
 		this.currentSpeed = n;
 		
@@ -44,12 +38,6 @@ public class P359E7 {
 		}
 	}
 	
-	/**
-	 * 
-	 * @param hours Amount to increase the distance traveled and decrease current fuel by
-	 * 
-	 * @post Increases distance traveled by currentSpeed * hours and decreases current fuel
-	 */
 	public void operateBoat(double hours) {
 		double traveled = this.currentSpeed * hours;
 		
@@ -57,12 +45,6 @@ public class P359E7 {
 		this.currentFuel -= traveled / this.motorEfficiency;
 	}
 	
-	/**
-	 * 
-	 * @param fuel Amount of fuel to increase current fuel by
-	 * 
-	 * @post Increases currentFuel
-	 */
 	public void fillTank(double fuel) {
 		this.currentFuel += fuel;
 		
@@ -71,18 +53,10 @@ public class P359E7 {
 		}
 	}
 	
-	/**
-	 * 
-	 * @return The current fuel level (currentFuel)
-	 */
 	public double getCurrentFuel() {
 		return this.currentFuel;
 	}
 	
-	/**
-	 * 
-	 * @return The total distance traveled (distanceTraveled)
-	 */
 	public double getDistanceTraveled() {
 		return this.distanceTraveled;
 	}

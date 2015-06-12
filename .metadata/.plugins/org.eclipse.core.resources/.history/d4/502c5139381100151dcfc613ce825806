@@ -46,7 +46,7 @@ public class P359E7 {
 	
 	/**
 	 * 
-	 * @param hours Amount to increase the distance traveled and decrease current fuel by
+	 * @param hours to increase the distance traveled and decrease current fuel by
 	 * 
 	 * @post Increases distance traveled by currentSpeed * hours and decreases current fuel
 	 */
@@ -57,12 +57,6 @@ public class P359E7 {
 		this.currentFuel -= traveled / this.motorEfficiency;
 	}
 	
-	/**
-	 * 
-	 * @param fuel Amount of fuel to increase current fuel by
-	 * 
-	 * @post Increases currentFuel
-	 */
 	public void fillTank(double fuel) {
 		this.currentFuel += fuel;
 		
@@ -71,18 +65,10 @@ public class P359E7 {
 		}
 	}
 	
-	/**
-	 * 
-	 * @return The current fuel level (currentFuel)
-	 */
 	public double getCurrentFuel() {
 		return this.currentFuel;
 	}
 	
-	/**
-	 * 
-	 * @return The total distance traveled (distanceTraveled)
-	 */
 	public double getDistanceTraveled() {
 		return this.distanceTraveled;
 	}
