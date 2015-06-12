@@ -1,0 +1,31 @@
+package hw3;
+
+public class P464E67 {
+	private int numberInRoom = 0;
+	private static int totalNumber;
+	
+	public void addOneToRoom() {
+		this.numberInRoom++;
+		totalNumber++;
+	}
+	
+	public void removeOneToRoom() {
+		if (this.numberInRoom - 1 >= 0) {
+			this.numberInRoom--;
+			totalNumber--;	
+		}
+	}
+	
+	public int getNumber() {
+		return this.numberInRoom;
+	}
+	
+	public int getTotal() {
+		return totalNumber;
+	}
+	
+	public static void main(String[] args) {
+		P464E67 office = new P464E67();
+		
+	}
+}

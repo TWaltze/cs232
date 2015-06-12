@@ -13,7 +13,7 @@ public class P464E67 {
 		totalNumber++;
 	}
 	
-	public void removeOneFromRoom() {
+	public void removeOneToRoom() {
 		if (this.numberInRoom - 1 >= 0) {
 			this.numberInRoom--;
 			totalNumber--;	
@@ -24,23 +24,12 @@ public class P464E67 {
 		return this.numberInRoom;
 	}
 	
-	public static int getTotal() {
+	public int getTotal() {
 		return totalNumber;
 	}
 	
 	public static void main(String[] args) {
 		P464E67 office = new P464E67();
-		P464E67 conference = new P464E67();
 		
-		office.addOneToRoom();
-		office.removeOneFromRoom();
-		office.removeOneFromRoom();
-		System.out.println(office.getNumber());
-		
-		conference.addOneToRoom();
-		conference.addOneToRoom();
-		System.out.println(conference.getNumber());
-		
-		System.out.println(P464E67.getTotal());
 	}
 }

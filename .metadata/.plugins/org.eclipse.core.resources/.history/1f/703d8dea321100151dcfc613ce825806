@@ -24,7 +24,7 @@ public class P464E67 {
 		return this.numberInRoom;
 	}
 	
-	public static int getTotal() {
+	public int getTotal() {
 		return totalNumber;
 	}
 	
