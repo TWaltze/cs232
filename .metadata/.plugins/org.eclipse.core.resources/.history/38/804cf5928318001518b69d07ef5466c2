@@ -1,0 +1,32 @@
+/**
+ * Tyler Waltze
+ * twaltze@bu.edu
+ * U91283106
+ * 
+ * MET CS 232
+ * 6/21/15
+ */
+
+package hw4;
+
+import java.util.Scanner;
+
+public class OperatorSelector {
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		
+		showMenu();
+		
+	}
+	
+	public static void showMenu() {
+		System.out.println("Select a command below:");
+		System.out.println("-1. Exit Program");
+		System.out.println(" 0. Show Help");
+		System.out.println(" 1. Multiplication");
+		System.out.println(" 2. Division");
+		System.out.println(" 3. Subtraction");
+		System.out.println(" 4. Addition");
+		System.out.print("Please make a selection: ");
+	}
+}
