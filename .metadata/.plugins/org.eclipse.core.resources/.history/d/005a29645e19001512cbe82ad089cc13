@@ -84,7 +84,7 @@ public class OperatorSelector {
 	
 	/*
 	 * Collect <numberOfInputs> inputs.
-	 * All inputs will be treated as a double.
+	 * All inputs must be a double.
 	 */
 	public static double[] gatherInputs(int numberOfInputs) {
 		double[] numbers = new double[numberOfInputs];
