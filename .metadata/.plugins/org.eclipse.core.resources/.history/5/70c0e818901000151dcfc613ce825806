@@ -1,9 +1,0 @@
-package hw3;
-
-public class P358E6 {
-	public static void main(String[] args) {
-		String test = "Hello";
-		
-		System.out.println(test);
-	}
-}

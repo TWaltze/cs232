@@ -1,0 +1,10 @@
+package hw4;
+
+public interface Command {
+	
+	/*
+	 * Execute mathematical operation on a number
+	 * of numbers. Print out ending result.
+	 */
+	public void execute();
+}

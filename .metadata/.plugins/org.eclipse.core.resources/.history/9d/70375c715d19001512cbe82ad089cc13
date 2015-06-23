@@ -82,10 +82,6 @@ public class OperatorSelector {
 		System.out.println(" 4. Addition");
 	}
 	
-	/*
-	 * Collect <numberOfInputs> inputs.
-	 * All inputs must be a double.
-	 */
 	public static double[] gatherInputs(int numberOfInputs) {
 		double[] numbers = new double[numberOfInputs];
 		Scanner keyboard = new Scanner(System.in);

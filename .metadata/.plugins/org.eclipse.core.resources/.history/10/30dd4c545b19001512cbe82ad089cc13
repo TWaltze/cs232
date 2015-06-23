@@ -12,12 +12,6 @@ package hw4;
 import java.util.Scanner;
 
 public class OperatorSelector {
-	/*
-	 * Main program.
-	 * 
-	 * Determine type of mathematical operation
-	 * and collect inputs.
-	 */
 	public static void main(String[] args) {
 		Scanner keyboard = new Scanner(System.in);
 		Command command;
@@ -46,16 +40,16 @@ public class OperatorSelector {
 					
 					if(option == 1) {
 						inputs = gatherInputs(2);
-						command = new Multiplication(inputs);
+						command = new Multiplication(inputs[0], inputs[1]);
 					} else if(option == 2) {
 						inputs = gatherInputs(2);
-						command = new Division(inputs);
+						command = new Division(inputs[0], inputs[1]);
 					} else if(option == 3) {
 						inputs = gatherInputs(2);
-						command = new Subtraction(inputs);
+						command = new Subtraction(inputs[0], inputs[1]);
 					} else {
 						inputs = gatherInputs(2);
-						command = new Addition(inputs);
+						command = new Addition(inputs[0], inputs[1]);
 					}
 					
 					command.execute();
@@ -68,10 +62,6 @@ public class OperatorSelector {
 		}
 	}
 	
-	/*
-	 * Display main menu. Doesn't incorporate any interaction.
-	 * Simply used for user direction.
-	 */
 	public static void showMenu() {
 		System.out.println("Select a command below:");
 		System.out.println("-1. Exit Program");
@@ -82,10 +72,6 @@ public class OperatorSelector {
 		System.out.println(" 4. Addition");
 	}
 	
-	/*
-	 * Collect <numberOfInputs> inputs.
-	 * All inputs must be a double.
-	 */
 	public static double[] gatherInputs(int numberOfInputs) {
 		double[] numbers = new double[numberOfInputs];
 		Scanner keyboard = new Scanner(System.in);
